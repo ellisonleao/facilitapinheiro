@@ -92,3 +92,6 @@ footer li:before {
 .subtitle {
     color: #2d2d2d !important;
 }
+.subtitle > strong {
+    color: #000000 !important;
+}
