@@ -82,3 +82,12 @@ margin: 0 auto;}
 .hero.is-primary .tabs.is-boxed a {
 	color: #3b9bd7;
 }
+
+.pswp__caption__center {
+    max-width: none;
+    font-weight: bold;
+}
+
+figcaption {
+    display: none;
+}
