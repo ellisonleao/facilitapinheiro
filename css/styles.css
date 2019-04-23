@@ -25,13 +25,13 @@
 .tab-pane {
     display: none;
 }
-.tab-pane.is-active {
-    display: block;
-    width: 50%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
+/* .tab-pane.is-active { */
+/*     display: block; */
+/*     width: 50%; */
+/*     position: relative; */
+/*     left: 50%; */
+/*     transform: translateX(-50%); */
+/* } */
 .is-active {
     display: initial;
 }

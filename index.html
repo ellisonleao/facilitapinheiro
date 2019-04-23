@@ -81,10 +81,456 @@
                     </ul>
                 </div>
                 <div class="tab-content">
-                    <div class="tab-pane is-active level" id="pane-1">
+                    <div class="tab-pane is-active" id="pane-1">
                         <div class="content has-text-centered">
                             <h1>Mudança solidária</h1>
-                            <p>A <strong>Oikos</strong> e <strong>Serraria Falcão</strong> se unem em solidariedade para promover a mudança solidária para moradores do Pinheiro na área de risco. O ato disponibiliza caminhão e motorista, não se responsabilizando pelo carregamento e descarregamento da mobília. <strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSeoU-7BDG92zmohmEUfJb82XZfvwzwXYBTOHFWJsFwA2xxGtA/viewform" target="_blank">CLIQUE AQUI</a></strong> e preencha o cadastro abaixo que em breve entraremos em contato.</p>
+                            <p>A <strong>Oikos</strong> e <strong>Serraria Falcão</strong> se unem em solidariedade para promover a mudança solidária para moradores do Pinheiro na área de risco. O ato disponibiliza caminhão e motorista, não se responsabilizando pelo carregamento e descarregamento da mobília. Preencha o cadastro abaixo que em breve entraremos em contato.</p>
+                            <div class="columns">
+                                <div class="column is-half">
+                                    <figure>
+                                        <a href="https://serrariafalcao.com.br/" target="_blank"><img src="images/falcao_logo_small.png" alt="Serraria Falcão"/></a>
+                                    </figure>
+                                </div>
+                                <div class="column is-half">
+                                    <figure>
+                                        <a href="https://www.instagram.com/oikos.casa/" target="_blank"><img src="images/oikos_logo_small.png" alt="Oikos casa"/></a>
+                                    </figure>
+                                </div>
+                            </div>
+                            <form id="moving" class="box" action="https://formspree.io/institutoifpp@gmail.com" method="POST">
+                                <input type="hidden" name="_next" value="/thanks.html"/>
+                                <input type="hidden" name="_language" value="pt" />
+                                <input type="hidden" name="_subject" value="[MUDANÇA] Novo pedido foi submetido!" />
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Email:</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" name="_replyto" placeholder="Digite aqui">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Nome Completo:</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" name="nome" placeholder="Digite aqui" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Sexo:</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="sexo" value="masculino">
+                                                    Masculino
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="sexo" value="feminino">
+                                                    Feminino
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Data de Nascimento:</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" name="data-nascimento" placeholder="DD/MM/YYYY">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Telefone fixo:</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" name="telefone" placeholder="Digite aqui">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Celular (Whatsapp):</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" name="celular" placeholder="Digite aqui">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Endereço atual:</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" name="endereco-atual" placeholder="Digite aqui" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Endereço futuro:</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" name="endereco-futuro" placeholder="Digite aqui">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Bairro:</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" name="bairro" placeholder="Digite aqui" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Cidade:</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" name="cidade" placeholder="Digite aqui" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Estado:</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" name="estado" placeholder="Digite aqui" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Complemento:</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" name="complemento" placeholder="Digite aqui">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Ponto de referência:</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" name="ponto-referencia" placeholder="Digite aqui">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Quantas pessoas moram com você?</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="total-pessoas" value="sozinho">
+                                                    Moro sozinho(a)
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="total-pessoas" value="1 pessoa">
+                                                    Uma pessoa
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="total-pessoas" value="2 pessoas">
+                                                    Duas pessoas
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="total-pessoas" value="3 pessoas">
+                                                    Três pessoas
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="total-pessoas" value="+ de 3 pessoas">
+                                                    Mais de três
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Quantas crianças moram com você?</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="total-criancas" value="0">
+                                                    Nenhuma
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="total-criancas" value="1 criança">
+                                                    Uma criança
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="total-criancas" value="2 crianças">
+                                                    Duas criança
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="total-criancas" value="3 crianças">
+                                                    Três criança
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="total-criancas" value="+ de 3 crianças">
+                                                    Mais de três
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Quantos cômodos sua residência possui?</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="total-comodos" value="1">
+                                                    Um cômodo
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="total-comodos" value="2">
+                                                    Dois cômodos
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="total-comodos" value="3">
+                                                    Três cômodos
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="total-comodos" value="4">
+                                                    Quatro cômodos
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="total-comodos" value="+ de 4">
+                                                    Mais de quatro
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Próximo a sua residência tem espaço para estacionar?</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="tem-estacionamento" value="sim">
+                                                    Sim
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="tem-estacionamento" value="nao">
+                                                    Não
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Possui algum equipamento hospitalar como cadeiras de rodas, camas especiais, etc ?</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="tem-equipamento-hospitalar" value="nao">
+                                                    Não
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="tem-equipamento-hospitalar" value="sim">
+                                                    Sim
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Caso sim, qual?</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" name="equipamento-hospitalar">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Sua residência atual tem facilidade para retirada de móveis, como portas largas?</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="tem-facilidade-retirada-imoveis" value="sim">
+                                                    Sim
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="tem-facilidade-retirada-imoveis" value="nao">
+                                                    Não
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Possui algum item com peso superior a 200Kgs?</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="tem-item-superior-200kg" value="nao">
+                                                    Não
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="tem-item-superior-200kg" value="sim">
+                                                    Sim
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="tem-item-superior-200kg" value="nao-sei">
+                                                    Não sei
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label ">
+                                        <label class="label">Próximo a sua futura residência tem espaço para estacionar?</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="tem-estacionamento-endereco-futuro" value="sim">
+                                                    Sim
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="tem-estacionamento-endereco-futuro" value="nao">
+                                                    Não
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="tem-estacionamento-endereco-futuro" value="nao-sei">
+                                                    Não sei
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label">
+                                        <label class="label">Descreva o nome de todas as pesoas que moram na residência de sua família (inclusive você, avós, tios, primos, amigos que morarem também)</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <textarea class="textarea" name="moradores" placeholder="Digite aqui"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label">
+                                        <label class="label">Outras informações que você julgar necessárias, exemplo: Há pessoas com deficiência, pessoas com problemas crônicos de saúde, etc</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <textarea class="textarea" name="informacoes-extras" placeholder="Digite aqui"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field is-horizontal">
+                                    <div class="field-label is-large"></div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="button is-success is-large" type="submit" value="ENVIAR" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div class="tab-pane" id="pane-2">
@@ -107,7 +553,7 @@
                                 </div>
                             </article>
                             </p>
-							<h3>Clique nas fotos e veja os relatos</h3>
+                            <h3>Clique nas fotos e veja os relatos</h3>
                             <div class="gallery columns is-gapless is-multiline is-mobile" itemscope itemtype="http://schema.org/ImageGallery">
                                 <figure class="column is-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                                     <a href="images/gallery/pic1.png" itemprop="contentUrl" data-size="1024x846">
@@ -288,6 +734,29 @@
                                 <input type="hidden" name="_language" value="pt" />
                                 <input type="hidden" name="_subject" value="[EXPO] Uma nova foto foi submetida!" />
                             </form>
+                            <h2>Parceiros que tornam tudo isso possível</h2>
+                            <div class="columns">
+                                <div class="column">
+                                    <figure>
+                                        <a href="https://www.instagram.com/instituto_ifpp/" target="_blank"><img src="images/logo_ifpp_small.png" alt="Instituto para o Fomento de Políticas Públicas"/></a>
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure>
+                                        <a href="https://www.instagram.com/foto.debolso/" target="_blank"><img src="images/logo_fotodebolso_small.png" alt="Foto de Bolso"/></a>
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure>
+                                        <a href="https://www.instagram.com/maceioantigaoficial/" target="_blank"><img src="images/logo_maceio_small.png" alt="Maceió Antiga"/></a>
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure>
+                                        <a href="https://www.facebook.com/SOS-Bairro-Pinheiro-2256223547723817/" target="_blank"><img src="images/logo_sos_small.png" alt="S.O.S Pinheiro"/></a>
+                                    </figure>
+                                </div>
+                            </div>
 
                             <!-- Root element of PhotoSwipe. Must have class pswp. -->
                             <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
