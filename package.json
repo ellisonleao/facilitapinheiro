@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "csso-cli": "^2.0.2",
+    "html-minifier": "^4.0.0",
+    "uglify-js": "^3.5.9"
+  }
+}
